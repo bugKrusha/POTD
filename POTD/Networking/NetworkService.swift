@@ -12,8 +12,8 @@ import Alamofire
 class NetworkService: NetworkServiceProvider {
     var delegate: NetworkServiceConsumer?
     
-    func load(url: URL, paramters: [String: Any]) {
-        Alamofire.request(url, parameters: paramters)
+    func load(networkRequest: NetworkRequest) {
+        Alamofire.request(networkRequest.url, parameters: networkRequest.paramater)
         .validate(statusCode: 200..<300)
         .responseJSON { response in
             switch response.result {
