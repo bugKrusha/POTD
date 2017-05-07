@@ -17,6 +17,10 @@
 		1B6CD49E1EBF8565000A861D /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B6CD49D1EBF8565000A861D /* NetworkService.swift */; };
 		1B6CD4A01EBF859C000A861D /* NetworkServiceProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B6CD49F1EBF859C000A861D /* NetworkServiceProvider.swift */; };
 		1B6CD4A21EBF85F9000A861D /* NetworkServiceConsumer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B6CD4A11EBF85F9000A861D /* NetworkServiceConsumer.swift */; };
+		1B6CD4A51EBF9114000A861D /* PhotoDisplayPresentationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B6CD4A41EBF9114000A861D /* PhotoDisplayPresentationModel.swift */; };
+		1B6CD4A71EBF936F000A861D /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B6CD4A61EBF936F000A861D /* API.swift */; };
+		1B6CD4A91EBF93A3000A861D /* Apod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B6CD4A81EBF93A3000A861D /* Apod.swift */; };
+		1B6CD4AD1EBF9703000A861D /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B6CD4AC1EBF9703000A861D /* NetworkRequest.swift */; };
 		6461FF929820FF129567B099 /* Pods_POTDUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 821548E941BC7E5996AD236F /* Pods_POTDUITests.framework */; };
 		6D08A8EEB436DC9615FAC7A8 /* Pods_POTD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42E47A6AEEE96C20B6674E68 /* Pods_POTD.framework */; };
 		DB2CDB1D4C57D66DD3738A09 /* Pods_POTDTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DA4EEBED002FAB9F90F15ED /* Pods_POTDTests.framework */; };
@@ -56,6 +60,10 @@
 		1B6CD49D1EBF8565000A861D /* NetworkService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NetworkService.swift; path = Networking/NetworkService.swift; sourceTree = "<group>"; };
 		1B6CD49F1EBF859C000A861D /* NetworkServiceProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NetworkServiceProvider.swift; path = Networking/NetworkServiceProvider.swift; sourceTree = "<group>"; };
 		1B6CD4A11EBF85F9000A861D /* NetworkServiceConsumer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NetworkServiceConsumer.swift; path = Networking/NetworkServiceConsumer.swift; sourceTree = "<group>"; };
+		1B6CD4A41EBF9114000A861D /* PhotoDisplayPresentationModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PhotoDisplayPresentationModel.swift; path = ViewControllers/PhotoDisplayPresentationModel.swift; sourceTree = "<group>"; };
+		1B6CD4A61EBF936F000A861D /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = API.swift; path = API/API.swift; sourceTree = "<group>"; };
+		1B6CD4A81EBF93A3000A861D /* Apod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Apod.swift; path = Model/Apod.swift; sourceTree = "<group>"; };
+		1B6CD4AC1EBF9703000A861D /* NetworkRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NetworkRequest.swift; path = Networking/NetworkRequest.swift; sourceTree = "<group>"; };
 		1DA4EEBED002FAB9F90F15ED /* Pods_POTDTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_POTDTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		42E47A6AEEE96C20B6674E68 /* Pods_POTD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_POTD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		683A12ED717CE9E4E60C51C1 /* Pods-POTDUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-POTDUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-POTDUITests/Pods-POTDUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -131,6 +139,8 @@
 			isa = PBXGroup;
 			children = (
 				1B0E47021EB69B6C00751361 /* AppDelegate.swift */,
+				1B6CD4AA1EBF93AC000A861D /* Model */,
+				1B6CD4AB1EBF93C4000A861D /* API */,
 				1B6CD4A31EBF8611000A861D /* Networking */,
 				1BBD6F301EB6D2C0006BDDFD /* ViewControllers */,
 				1B0E47061EB69B6C00751361 /* Main.storyboard */,
@@ -163,16 +173,34 @@
 			isa = PBXGroup;
 			children = (
 				1B6CD49D1EBF8565000A861D /* NetworkService.swift */,
+				1B6CD4AC1EBF9703000A861D /* NetworkRequest.swift */,
 				1B6CD4A11EBF85F9000A861D /* NetworkServiceConsumer.swift */,
 				1B6CD49F1EBF859C000A861D /* NetworkServiceProvider.swift */,
 			);
 			name = Networking;
 			sourceTree = "<group>";
 		};
+		1B6CD4AA1EBF93AC000A861D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1B6CD4A81EBF93A3000A861D /* Apod.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		1B6CD4AB1EBF93C4000A861D /* API */ = {
+			isa = PBXGroup;
+			children = (
+				1B6CD4A61EBF936F000A861D /* API.swift */,
+			);
+			name = API;
+			sourceTree = "<group>";
+		};
 		1BBD6F301EB6D2C0006BDDFD /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
 				1B0E47041EB69B6C00751361 /* PhotoDisplayViewController.swift */,
+				1B6CD4A41EBF9114000A861D /* PhotoDisplayPresentationModel.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -475,10 +503,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				1B6CD4A21EBF85F9000A861D /* NetworkServiceConsumer.swift in Sources */,
+				1B6CD4A91EBF93A3000A861D /* Apod.swift in Sources */,
 				1B0E47051EB69B6C00751361 /* PhotoDisplayViewController.swift in Sources */,
 				1B6CD4A01EBF859C000A861D /* NetworkServiceProvider.swift in Sources */,
+				1B6CD4A51EBF9114000A861D /* PhotoDisplayPresentationModel.swift in Sources */,
 				1B6CD49E1EBF8565000A861D /* NetworkService.swift in Sources */,
 				1B0E47031EB69B6C00751361 /* AppDelegate.swift in Sources */,
+				1B6CD4AD1EBF9703000A861D /* NetworkRequest.swift in Sources */,
+				1B6CD4A71EBF936F000A861D /* API.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

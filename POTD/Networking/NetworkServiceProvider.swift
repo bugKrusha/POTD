@@ -10,5 +10,6 @@ import Foundation
 import Alamofire
 
 protocol NetworkServiceProvider: class {
-    func load(url: URL, paramters: [String: Any])
+    var delegate: NetworkServiceConsumer? { get set }
+    func load(networkRequest: NetworkRequest)
 }
