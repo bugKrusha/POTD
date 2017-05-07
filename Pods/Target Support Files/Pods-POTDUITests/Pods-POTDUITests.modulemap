@@ -1,0 +1,6 @@
+framework module Pods_POTDUITests {
+  umbrella header "Pods-POTDUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
