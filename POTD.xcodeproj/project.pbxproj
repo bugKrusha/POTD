@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1B0E47031EB69B6C00751361 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B0E47021EB69B6C00751361 /* AppDelegate.swift */; };
-		1B0E47051EB69B6C00751361 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B0E47041EB69B6C00751361 /* ViewController.swift */; };
+		1B0E47051EB69B6C00751361 /* PhotoDisplayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B0E47041EB69B6C00751361 /* PhotoDisplayViewController.swift */; };
 		1B0E47081EB69B6C00751361 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B0E47061EB69B6C00751361 /* Main.storyboard */; };
 		1B0E470A1EB69B6C00751361 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B0E47091EB69B6C00751361 /* Assets.xcassets */; };
 		1B0E470D1EB69B6C00751361 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B0E470B1EB69B6C00751361 /* LaunchScreen.storyboard */; };
@@ -36,7 +36,7 @@
 /* Begin PBXFileReference section */
 		1B0E46FF1EB69B6C00751361 /* POTD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = POTD.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B0E47021EB69B6C00751361 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1B0E47041EB69B6C00751361 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1B0E47041EB69B6C00751361 /* PhotoDisplayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PhotoDisplayViewController.swift; path = ViewControllers/PhotoDisplayViewController.swift; sourceTree = "<group>"; };
 		1B0E47071EB69B6C00751361 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1B0E47091EB69B6C00751361 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1B0E470C1EB69B6C00751361 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -98,7 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				1B0E47021EB69B6C00751361 /* AppDelegate.swift */,
-				1B0E47041EB69B6C00751361 /* ViewController.swift */,
+				1BBD6F301EB6D2C0006BDDFD /* ViewControllers */,
 				1B0E47061EB69B6C00751361 /* Main.storyboard */,
 				1B0E47091EB69B6C00751361 /* Assets.xcassets */,
 				1B0E470B1EB69B6C00751361 /* LaunchScreen.storyboard */,
@@ -123,6 +123,14 @@
 				1B0E47241EB69B6C00751361 /* Info.plist */,
 			);
 			path = POTDUITests;
+			sourceTree = "<group>";
+		};
+		1BBD6F301EB6D2C0006BDDFD /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				1B0E47041EB69B6C00751361 /* PhotoDisplayViewController.swift */,
+			);
+			name = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,7 +270,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1B0E47051EB69B6C00751361 /* ViewController.swift in Sources */,
+				1B0E47051EB69B6C00751361 /* PhotoDisplayViewController.swift in Sources */,
 				1B0E47031EB69B6C00751361 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -514,6 +522,7 @@
 				1B0E47291EB69B6C00751361 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1B0E472A1EB69B6C00751361 /* Build configuration list for PBXNativeTarget "POTDTests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +531,7 @@
 				1B0E472C1EB69B6C00751361 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1B0E472D1EB69B6C00751361 /* Build configuration list for PBXNativeTarget "POTDUITests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +540,7 @@
 				1B0E472F1EB69B6C00751361 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
