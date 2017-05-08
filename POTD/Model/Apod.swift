@@ -22,6 +22,7 @@ extension Apod {
     init(json: JSON) {
         self.explanation = json["explanation"].stringValue
         self.hdUrl = json["hdurl"].stringValue
+        self.url = json["url"].stringValue
         self.title = json["title"].stringValue
     }
 }

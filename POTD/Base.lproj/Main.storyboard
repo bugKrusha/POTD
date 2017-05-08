@@ -23,25 +23,19 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5f9-1V-jkR">
-                                <rect key="frame" x="16" y="101" width="343" height="291"/>
+                                <rect key="frame" x="16" y="80" width="343" height="291"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="291" id="fEP-mY-TN3"/>
                                 </constraints>
                             </imageView>
                             <datePicker contentMode="scaleToFill" verticalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="l7y-hG-KUG">
-                                <rect key="frame" x="27" y="400" width="320" height="216"/>
+                                <rect key="frame" x="27" y="379" width="320" height="216"/>
                                 <date key="date" timeIntervalSinceReferenceDate="515298286.93543297">
                                     <!--2017-05-01 02:24:46 +0000-->
                                 </date>
                             </datePicker>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gFp-ii-D1b">
-                                <rect key="frame" x="174" y="629" width="42" height="18"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p9I-zZ-Cbr">
-                                <rect key="frame" x="16" y="72" width="343" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p9I-zZ-Cbr">
+                                <rect key="frame" x="16" y="72" width="343" height="0.0"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -51,11 +45,7 @@
                         <constraints>
                             <constraint firstItem="p9I-zZ-Cbr" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="5LC-TS-ay1"/>
                             <constraint firstItem="5f9-1V-jkR" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Cb1-3o-L1x"/>
-                            <constraint firstItem="gFp-ii-D1b" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="158" id="Eq8-br-AE7"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="gFp-ii-D1b" secondAttribute="trailing" constant="143" id="FBO-kW-cxH"/>
-                            <constraint firstItem="gFp-ii-D1b" firstAttribute="top" relation="lessThanOrEqual" secondItem="l7y-hG-KUG" secondAttribute="bottom" constant="157" id="Knn-fM-Edb"/>
                             <constraint firstItem="p9I-zZ-Cbr" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Oul-pQ-3y7"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="gFp-ii-D1b" secondAttribute="bottom" constant="20" id="TFr-PQ-OTr"/>
                             <constraint firstItem="5f9-1V-jkR" firstAttribute="top" secondItem="p9I-zZ-Cbr" secondAttribute="bottom" constant="8" symbolic="YES" id="VOL-8f-CvY"/>
                             <constraint firstItem="p9I-zZ-Cbr" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="feX-vZ-Z6w"/>
                             <constraint firstItem="5f9-1V-jkR" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="heO-OI-b6X"/>
@@ -74,7 +64,6 @@
                     </navigationItem>
                     <connections>
                         <outlet property="datePicker" destination="l7y-hG-KUG" id="IW4-gK-0f4"/>
-                        <outlet property="infoLabel" destination="gFp-ii-D1b" id="TS2-5t-BK4"/>
                         <outlet property="potdImageView" destination="5f9-1V-jkR" id="gbf-yD-AEG"/>
                         <outlet property="titleLabel" destination="p9I-zZ-Cbr" id="86W-0Y-J73"/>
                     </connections>
