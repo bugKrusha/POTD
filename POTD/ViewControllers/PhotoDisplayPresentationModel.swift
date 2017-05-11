@@ -9,28 +9,21 @@
 import Foundation
 import SwiftyJSON
 
-protocol PhotoDisplayPresentationModelDelegate  {
-    func load(apod: Apod)
-    func loading()
-}
-
 class PhotoDisplayPresentationModel {
     var delegate: PhotoDisplayPresentationModelDelegate?
     private let api = API()
     private let networkServiceProvider: NetworkServiceProvider = NetworkService()
     
-    var date: Date
+    var today: Date
     let loadingText = "Loading..."
     
-    init(date: Date) {
-        self.date = date
+    init(today: Date) {
+        self.today = today
         networkServiceProvider.delegate = self
-        loadPODFor(date: date)
     }
     
     func loadPODFor(date: Date) {
         delegate?.loading()
-        
         let networkRequest = api.generateParameter(date: date)
         networkServiceProvider.load(networkRequest: networkRequest)
     }
