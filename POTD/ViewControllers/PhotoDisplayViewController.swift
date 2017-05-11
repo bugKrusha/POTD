@@ -27,8 +27,9 @@ class PhotoDisplayViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         datePicker.maximumDate = Date()
-        presentationModel = PhotoDisplayPresentationModel(date: datePicker.date)
+        presentationModel = PhotoDisplayPresentationModel(today: datePicker.date)
         presentationModel?.delegate = self
+        presentationModel?.loadPODFor(date: datePicker.date)
     }
 }
 
@@ -48,6 +49,7 @@ extension PhotoDisplayViewController: PhotoDisplayPresentationModelDelegate {
                                   placeholder: nil,
                                   options: nil,
                                   progressBlock: nil) { _, _, _, _ in
+                                    
             DispatchQueue.main.async {
                 [weak self] in
                 self?.titleLabel.text = apod.title
