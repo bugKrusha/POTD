@@ -299,12 +299,14 @@
 					1B0E47121EB69B6C00751361 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = 8767555EYT;
+						LastSwiftMigration = 0930;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 1B0E46FE1EB69B6C00751361;
 					};
 					1B0E471D1EB69B6C00751361 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = 8767555EYT;
+						LastSwiftMigration = 0930;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 1B0E46FE1EB69B6C00751361;
 					};
@@ -608,7 +610,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Glowforge.POTD;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -622,7 +624,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Glowforge.POTD;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
