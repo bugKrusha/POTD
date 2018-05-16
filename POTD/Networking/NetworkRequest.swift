@@ -10,5 +10,5 @@ import Foundation
 
 struct NetworkRequest {
     let url: String
-    let paramater: [String: String]
+    let parameters: [String: String]
 }

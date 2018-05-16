@@ -25,6 +25,6 @@ struct API {
         var parameters = ["api_key": API_KEY]
         parameters["date"] = dateFormatter.string(from: date)
 
-        return NetworkRequest(url: url, paramater: parameters)
+        return NetworkRequest(url: url, parameters: parameters)
     }
 }
