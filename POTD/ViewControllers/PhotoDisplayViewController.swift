@@ -27,6 +27,7 @@ class PhotoDisplayViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         datePicker.maximumDate = Date()
+        
         presentationModel = PhotoDisplayPresentationModel(today: datePicker.date)
         presentationModel?.delegate = self
         presentationModel?.loadPODFor(date: datePicker.date)
@@ -43,8 +44,7 @@ extension PhotoDisplayViewController: PhotoDisplayPresentationModelDelegate {
             let url = URL(string: apod.url)
             else  { fatalError("Unable to create url.") }
         
-        /// Load image with Kingfisher and update info
-        /// label upon return
+        /// Load image with Kingfisher and update info label upon return
         potdImageView.kf.setImage(with: url,
                                   placeholder: nil,
                                   options: nil,

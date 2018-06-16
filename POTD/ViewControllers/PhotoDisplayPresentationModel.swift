@@ -14,7 +14,7 @@ class PhotoDisplayPresentationModel {
     private let api = API()
     private let networkServiceProvider: NetworkServiceProvider = NetworkService()
     
-    var today: Date
+    private var today: Date
     let loadingText = "Loading..."
     
     init(today: Date) {
@@ -24,7 +24,8 @@ class PhotoDisplayPresentationModel {
     
     func loadPODFor(date: Date) {
         delegate?.loading()
-        let networkRequest = api.generateParameter(date: date)
+        
+        let networkRequest = api.generateRequest(date: date)
         networkServiceProvider.load(networkRequest: networkRequest)
     }
 }
