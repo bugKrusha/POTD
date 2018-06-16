@@ -9,8 +9,6 @@
 import Foundation
 import SwiftyJSON
 
-// A picture of the day 
-// model
 struct Apod {
     let explanation: String
     let hdUrl: String

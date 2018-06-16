@@ -12,12 +12,12 @@ struct API {
     private let API_KEY = "A39KoG0iaHbKO67U08qV6x0PUJHOzhQkmb9dBRdN"
     private let url = "https://api.nasa.gov/planetary/apod"
     
-    /// Generate Network Request for call. Info
-    /// on parameters can be found here https://api.nasa.gov/api.html#apod
+    /// Generate Network Request for call. Info on parameters can be found
+    /// here https://api.nasa.gov/api.html#apod
     ///
     /// - Parameter date: Date for the request.
     /// - Returns: Parameters with api key and date.
-    func generateParameter(date: Date) -> NetworkRequest {
+    func generateRequest(date: Date) -> NetworkRequest {
         
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "yyyy-MM-dd"
