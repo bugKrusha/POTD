@@ -9,7 +9,7 @@ target 'POTD' do
   source 'https://github.com/CocoaPods/Specs.git'
   pod 'Alamofire', '~> 4.4'
   pod 'SwiftyJSON'
-  pod 'Kingfisher', '~> 3.0'
+  pod 'Kingfisher', '~> 4.0'
 
   target 'POTDTests' do
     inherit! :search_paths
